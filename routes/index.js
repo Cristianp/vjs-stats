@@ -21,7 +21,7 @@ router.get('/tracker/:stream/:session/:evento/:utime/:w/:h/:ref', function(req, 
 
   stats.findOne(busc, function(err, r) {
 
-    if (r) { // existe
+    if (r) {
 
       if(evento=='load') {
         r.load = o.utime;
